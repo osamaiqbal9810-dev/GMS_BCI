@@ -36,6 +36,7 @@
     ]
   },
   "dependencies": {
+    "next": "^14.2.0",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@faker-js/faker": "^6.0.0-alpha.7",
