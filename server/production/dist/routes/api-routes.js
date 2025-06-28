@@ -1,0 +1,61 @@
+"use strict";
+
+var express = require("express");
+var router = express.Router();
+
+var user_route = require("./../api/user/index");
+var user_group_route = require("./../api/userGroup/index");
+var local_route = require("./../auth/local/index");
+var attendance_route = require("./../api/attendance/index");
+var userHours_route = require("./../api/userHours/index");
+
+var msglist_route = require("./../api/msglist/index");
+var list_route = require("./../api/list/index");
+var SOD_route = require("./../api/SOD/index");
+var applicationLookups_route = require("./../api/ApplicationLookups/index");
+var applicationresources_route = require("./../api/ApplicationResources/index");
+var permissions_route = require("./../api/permission/index");
+var assets_route = require("./../api/assets/index");
+var assetTypes_route = require("./../api/assetTypes/index");
+var maintenance_route = require("./../api/Maintenance/index");
+var run_route = require("./../api/run/index");
+var runRange_route = require("./../api/runRange/index");
+var gpslog_route = require("./../api/GpsLog/index");
+var dashboard_route = require("./../api/dashboard/index");
+var workorder_route = require("./../api/workOrder/index");
+var notification_route = require("./../api/Notification/index");
+var sensorlog_route = require("./../api/sensorLog/index");
+var voiceassistant_route = require("./../api/voiceAssistant/index");
+var authorize_route = require("../auth/oauth2/index");
+var sensorReport_route = require("../api/sensorReport/index");
+var devices_route = require("../api/devices/index");
+var supportedParams = require("../api/SupportedParams/index");
+
+router.use("/login", local_route);
+router.use("/authorize", authorize_route);
+router.use("/users", user_route);
+router.use("/userHours", userHours_route);
+router.use("/userGroup", user_group_route);
+router.use("/attendance", attendance_route);
+router.use("/asset", assets_route);
+router.use("/runNumber", run_route);
+router.use("/runDetail", runRange_route);
+router.use("/list", list_route);
+router.use("/msglist", msglist_route);
+router.use("/SOD", SOD_route);
+router.use("/applicationlookups", applicationLookups_route);
+router.use("/applicationresources", applicationresources_route);
+router.use("/permission", permissions_route);
+router.use("/assettype", assetTypes_route);
+router.use("/maintenance", maintenance_route);
+router.use("/GpsLog", gpslog_route);
+router.use("/dashboard", dashboard_route);
+router.use("/workorder", workorder_route);
+router.use("/notification", notification_route);
+router.use("/sensorlog", sensorlog_route);
+router.use("/voiceassistant", voiceassistant_route);
+router.use("/report", sensorReport_route);
+router.use("/devices", devices_route);
+router.use("/SupportedParams", supportedParams);
+
+module.exports = router;

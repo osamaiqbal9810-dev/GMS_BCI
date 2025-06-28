@@ -1,0 +1,89 @@
+{
+   "_id":{
+      "$oid":"6268072d1362e73318dec0bf"
+   },
+   "coordinates":[
+      
+   ],
+   "inspectable":false,
+   "parentAsset":"6267c2051bb2c13804b6bd27",
+   "images":[
+      
+   ],
+   "documents":[
+      
+   ],
+   "childAsset":[
+      
+   ],
+   "levels":{
+      "1":{
+         "$oid":"6267c1fc1bb2c13804b6b7fa"
+      },
+      "2":{
+         "$oid":"6267c2011bb2c13804b6bb19"
+      },
+      "3":{
+         "$oid":"6267c2051bb2c13804b6bd27"
+      },
+      "currentLevel":"3"
+   },
+   "isRemoved":false,
+   "assetType":"Generator",
+   "attributes":{
+      "deviceType":"Generator",
+      "deviceIP":"127.0.0.1",
+      "devicePort":3000,
+      "deviceName":"APM ",
+      "deviceSlaveAddress":5,
+      "functionCode":4,
+      "deviceCompany":"APM",
+      "deviceMake":"APM",
+      "deviceModel":"302",
+      "deviceLocaton":"6267c2051bb2c13804b6bd27",
+      "registers":{
+         "Va":0,
+         "VaQuantity":1,
+         "Vb":1,
+         "VbQuantity":1,
+         "Vc":2,
+         "VcQuantity":1,
+         "Ia":6,
+         "IaQuantity":1,
+         "Ib":7,
+         "IbQuantity":1,
+         "Ic":8,
+         "IcQuantity":1,
+         "frequency":23,
+         "frequencyQuantity":1,
+         "generatedEnergy":33,
+         "generatedEnergyQuantity":2,
+         "coolentTemp":29,
+         "coolentTempQuantity":1,
+         "engineOilPressure":28,
+         "engineOilPressureQuantity":1,
+         "engineSpeed":22,
+         "engineSpeedQuantity":1,
+         "batteryVoltage":25,
+         "batteryVoltageQuantity":1,
+         "fuelLevel":30,
+         "fuelLevelQuantity":1
+      }
+   },
+   "description":"APM ",
+   "end":0,
+   "name":"APM ",
+   "start":0,
+   "unitId":"APM ",
+   "createdAt":{
+      "$date":{
+         "$numberLong":"1650984749189"
+      }
+   },
+   "updatedAt":{
+      "$date":{
+         "$numberLong":"1650984749203"
+      }
+   },
+   "__v":0
+}

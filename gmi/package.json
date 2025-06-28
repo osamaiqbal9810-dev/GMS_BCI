@@ -1,0 +1,16 @@
+{
+  "name": "gmi-api",
+  "version": "1.0.1",
+  "description": "",
+  "type": "module",
+  "main": "device-manager.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Adeel Salah",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "nodemon": "^2.0.15"
+  }
+}
